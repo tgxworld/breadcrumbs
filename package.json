@@ -1,0 +1,7 @@
+{
+  "author": "tgxworld",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint-config-discourse": "latest"
+  }
+}
