@@ -1,15 +1,17 @@
-<LinkTo @route="discovery.latest" >
+<LinkTo @route="discovery.latest">
   {{theme-i18n "latest"}}
 </LinkTo>
 
 {{#if this.category}}
   <LinkTo @route="discovery.category" @model={{this.categoryModel}}>
-    > {{this.category.name}}
+    >
+    {{this.category.name}}
   </LinkTo>
 {{/if}}
 
-{{#if @topic}}
-  <LinkTo @route="topic" @model={{@topic}}>
-    > {{@topic.title}}
+{{#if this.topic}}
+  <LinkTo @route="topic" @model={{this.topic}}>
+    >
+    {{this.topic.title}}
   </LinkTo>
 {{/if}}
